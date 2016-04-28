@@ -14,3 +14,11 @@ src/Archive created by free jZip.url
 README
 
 README
+
+bin/fowler/Customer.class
+
+bin/fowler/CustomerTest.class
+
+bin/fowler/Movie.class
+
+*.class
