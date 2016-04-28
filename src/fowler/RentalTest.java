@@ -1,5 +1,6 @@
 package fowler;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -18,5 +19,4 @@ public class RentalTest {
     public void getMovie() throws Exception {
         assertEquals(r.getMovie(), m);
     }
-
 }
