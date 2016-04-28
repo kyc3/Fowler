@@ -7,17 +7,17 @@ import static org.junit.Assert.*;
 
 public class MovieTest {
 
-    Movie movie = new Movie("Movie", 1905);
+    Movie movie = new Movie("Movie", 1);
 
     @Test
     public void getPriceCode() throws Exception {
-        assertEquals(movie.getPriceCode(), 1905);
+        assertEquals(movie.getPriceCode(), 1);
     }
 
     @Test
     public void setPriceCode() throws Exception {
-        movie.setPriceCode(15);
-        assertEquals(movie.getPriceCode(), 15);
+        movie.setPriceCode(2);
+        assertEquals(movie.getPriceCode(), 2);
     }
 
     @Test

@@ -10,13 +10,13 @@ public class CustomerTest {
 
 	final String name = "Yannick Winter";
 	Customer customer = new Customer(name);
-    Movie m = new Movie("Movie", 123);
+    Movie m = new Movie("Movie", 1);
     Rental r = new Rental(m, 30);
 
     @Test
     public void addRental() throws Exception {
         customer.addRental(r);
-        assertEquals(customer.statement(), "Rental Record for Yannick Winter\n\tTitle\t\tDays\tAmount\n\tMovie\t0.0\nAmount owed is 0.0\nYou earned 0 frequent renter points");
+        assertEquals(customer.statement(), "Rental Record for Yannick Winter\n\tTitle\t\tDays\tAmount\n\tMovie\t90.0\nAmount owed is 90.0\nYou earned 2 frequent renter points");
     }
 
     @Test
@@ -27,7 +27,7 @@ public class CustomerTest {
     @Test
     public void statement() throws Exception {
         customer.addRental(r);
-        assertEquals(customer.statement(), "Rental Record for Yannick Winter\n\tTitle\t\tDays\tAmount\n\tMovie\t0.0\nAmount owed is 0.0\nYou earned 0 frequent renter points");
+        assertEquals(customer.statement(), "Rental Record for Yannick Winter\n\tTitle\t\tDays\tAmount\n\tMovie\t90.0\nAmount owed is 90.0\nYou earned 2 frequent renter points");
     }
 
 	
